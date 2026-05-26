@@ -133,7 +133,7 @@ Visual walkthroughs for algorithms and data structures.
 
 | Project | PR / Issue | Type | Status |
 |---|---|---|---|
-| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | `fix(telnetmini): prevent slice-bounds panic in ParseNTLMResponse on truncated NTLM challenge` | Bug Fix · Security | 💬 10 comments |
+| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | `fix(telnetmini): prevent slice-bounds panic in ParseNTLMResponse on truncated NTLM challenge` | Bug Fix · Security | ✅ Merged |
 | [wazuh/wazuh](https://github.com/wazuh/wazuh) | `fix: narrow bare except to OSError in WazuhQueue.send_msg_to_agent` — **first PR ever** | Hardening | ✅ Opened |
 | [expressjs/express](https://github.com/expressjs/expressjs.com) | `RFC: Disable x-powered-by header by default in Express v6` | Security RFC | 💬 Discussion |
 | [expressjs/express](https://github.com/expressjs/expressjs.com) | 2 closed · 1 open PRs | Fixes | ✅ Merged |
