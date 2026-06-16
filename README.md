@@ -133,14 +133,13 @@ Visual walkthroughs for algorithms and data structures.
 
 | Project | PR / Issue | Type | Status |
 |---|---|---|---|
-| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | `fix(telnetmini): prevent slice-bounds panic in ParseNTLMResponse on truncated NTLM challenge` | Bug Fix · Security | ✅ Merged |
-| [wazuh/wazuh](https://github.com/wazuh/wazuh) | `fix: narrow bare except to OSError in WazuhQueue.send_msg_to_agent` — **first PR ever** | Hardening | ✅ Opened |
-| [expressjs/express](https://github.com/expressjs/expressjs.com) | `RFC: Disable x-powered-by header by default in Express v6` | Security RFC | 💬 Discussion |
+| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | `fix(telnetmini): prevent slice-bounds panic in ParseNTLMResponse on truncated NTLM challenge` | Bug Fix · Security | 3 ✅ Merged |
+| [expressjs/express](https://github.com/expressjs/expressjs.com) | `RFC: Disable x-powered-by header by default in Express v6` | Security RFC | ✅ Merged |
 | [expressjs/express](https://github.com/expressjs/expressjs.com) | 2 closed · 1 open PRs | Fixes | ✅ Merged |
 | [koajs/koa](https://github.com/koajs/koa) | Merged PR | Fixes | ✅ Merged |
 | [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov) | 2 closed PRs | Security | ✅ Merged |
-| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 3 open issues | Research | 🔬 Open |
-| [wazuh/wazuh](https://github.com/wazuh/wazuh) | `fix: Json::checkDuplicateKeys() misses duplicate keys with identical values` — 4 comments | Core Bug | 💬 Active |
+| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 3 open issues|2 Merged | Research | 🔬 Open |
+| [wazuh/wazuh](https://github.com/wazuh/wazuh) | `fix: Json::checkDuplicateKeys() misses duplicate keys with identical values` — 4 comments | Core Bug Resolved |
 
 ---
 
