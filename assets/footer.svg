@@ -1,0 +1,31 @@
+<svg width="900" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; }
+      .main { font-size: 18px; fill: #a9fdea; letter-spacing: 6px; font-weight: 700; }
+      .dim { font-size: 11px; fill: #2b6b5e; letter-spacing: 2px; }
+      .ekg { stroke: #2affc9; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round;
+             stroke-dasharray: 100 100; animation: draw 3s linear infinite; }
+      @keyframes draw { 0% { stroke-dashoffset: 100; } 55% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -100; } }
+      .blink { animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="150" fill="#04070a"/>
+  <rect x="1" y="1" width="898" height="148" rx="14" stroke="#123832" stroke-width="2"/>
+
+  <path class="ekg" pathLength="100"
+        d="M30 46 L330 46 L345 46 L355 24 L365 66 L375 14 L385 72 L395 46 L520 46 L535 34 L545 58 L555 46 L870 46"/>
+
+  <g text-anchor="middle">
+    <text x="450" y="102" class="main">ALWAYS ONLINE · ALWAYS SHIPPING</text>
+    <rect x="708" y="86" width="11" height="20" fill="#2affc9" class="blink"/>
+  </g>
+
+  <circle cx="34" cy="128" r="4" fill="#2affc9" class="pulse"/>
+  <text x="48" y="132" class="dim">SIGNAL STABLE</text>
+  <text x="870" y="132" class="dim" text-anchor="end">100% HANDCRAFTED SVG · NO TEMPLATES · NO GENERATORS</text>
+</svg>

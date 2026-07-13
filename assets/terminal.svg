@@ -1,0 +1,127 @@
+<svg width="900" height="470" viewBox="0 0 900 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barfill" x1="40" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f8f74"/>
+      <stop offset="1" stop-color="#2affc9"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; font-size: 17px; }
+      .p { fill: #3cf5cf; }
+      .c { fill: #eafffa; }
+      .o { fill: #7fa39b; }
+      .tag { fill: #ffd166; }
+      .ok { fill: #3cf5cf; }
+      .dim { fill: #35544d; font-size: 13px; }
+      .blink { animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+
+      /* master loop = 32s. cover rects slide right to reveal typed chars */
+      .anim { animation-duration: 32s; animation-timing-function: linear; animation-iteration-count: infinite; }
+
+      .g1 { animation-name: s1; } @keyframes s1 { 0%,0.5% {opacity:0} 0.7%,100% {opacity:1} }
+      .t1 { animation-name: t1; } @keyframes t1 { 0%,2% { transform: translateX(0); animation-timing-function: steps(6,end); } 8%,100% { transform: translateX(78px); } }
+      .k1 { animation-name: k1; } @keyframes k1 { 0%,0.5% {opacity:0} 0.7%,9.5% {opacity:1} 9.7%,100% {opacity:0} }
+
+      .g2 { animation-name: s2; } @keyframes s2 { 0%,9.5% {opacity:0} 9.7%,100% {opacity:1} }
+
+      .g3 { animation-name: s3; } @keyframes s3 { 0%,12% {opacity:0} 12.2%,100% {opacity:1} }
+      .t3 { animation-name: t3; } @keyframes t3 { 0%,14% { transform: translateX(0); animation-timing-function: steps(17,end); } 22%,100% { transform: translateX(188px); } }
+      .k3 { animation-name: k3; } @keyframes k3 { 0%,12% {opacity:0} 12.2%,23% {opacity:1} 23.2%,100% {opacity:0} }
+
+      .g4 { animation-name: s4; } @keyframes s4 { 0%,23.5% {opacity:0} 23.7%,100% {opacity:1} }
+      .g5 { animation-name: s5; } @keyframes s5 { 0%,25.5% {opacity:0} 25.7%,100% {opacity:1} }
+
+      .g6 { animation-name: s6; } @keyframes s6 { 0%,28% {opacity:0} 28.2%,100% {opacity:1} }
+      .t6 { animation-name: t6; } @keyframes t6 { 0%,30% { transform: translateX(0); animation-timing-function: steps(37,end); } 40%,100% { transform: translateX(392px); } }
+      .k6 { animation-name: k6; } @keyframes k6 { 0%,28% {opacity:0} 28.2%,41% {opacity:1} 41.2%,100% {opacity:0} }
+
+      .g7 { animation-name: s7; } @keyframes s7 { 0%,42% {opacity:0} 42.2%,100% {opacity:1} }
+      .g8 { animation-name: s8; } @keyframes s8 { 0%,44.5% {opacity:0} 44.7%,100% {opacity:1} }
+
+      .g9 { animation-name: s9; } @keyframes s9 { 0%,48% {opacity:0} 48.2%,100% {opacity:1} }
+      .t9 { animation-name: t9; } @keyframes t9 { 0%,50% { transform: translateX(0); animation-timing-function: steps(36,end); } 60%,100% { transform: translateX(382px); } }
+      .k9 { animation-name: k9; } @keyframes k9 { 0%,48% {opacity:0} 48.2%,61% {opacity:1} 61.2%,100% {opacity:0} }
+
+      .g10 { animation-name: s10; } @keyframes s10 { 0%,62% {opacity:0} 62.2%,100% {opacity:1} }
+      .fill10 { transform-box: fill-box; transform-origin: left center; animation-name: f10; } @keyframes f10 { 0%,62% { transform: scaleX(0.001); animation-timing-function: steps(24,end); } 74%,100% { transform: scaleX(1); } }
+
+      .g11 { animation-name: s11; } @keyframes s11 { 0%,76% {opacity:0} 76.2%,100% {opacity:1} }
+      .g12 { animation-name: s12; } @keyframes s12 { 0%,80% {opacity:0} 80.2%,100% {opacity:1} }
+    </style>
+  </defs>
+
+  <!-- window -->
+  <rect x="1" y="1" width="898" height="468" rx="14" fill="#070b0e"/>
+  <rect x="1" y="1" width="898" height="468" rx="14" stroke="#123832" stroke-width="2"/>
+  <path d="M1 15C1 7.268 7.268 1 15 1H885C892.732 1 899 7.268 899 15V46H1V15Z" fill="#0b1116"/>
+  <line x1="1" y1="46" x2="899" y2="46" stroke="#123832"/>
+  <circle cx="26" cy="24" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="24" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="24" r="6" fill="#27c93f"/>
+  <text x="450" y="30" text-anchor="middle" class="dim" letter-spacing="1">tej@github: ~/universe — zsh</text>
+
+  <!-- L1: whoami -->
+  <g class="anim g1">
+    <text x="40" y="88" class="p">tej@github:~$ <tspan class="c">whoami</tspan></text>
+    <rect x="183" y="71" width="82" height="23" fill="#070b0e" class="anim t1"/>
+  </g>
+  <g class="anim k1">
+    <g class="anim t1"><rect x="184" y="73" width="10" height="20" fill="#2affc9" class="blink"/></g>
+  </g>
+
+  <!-- L2 -->
+  <g class="anim g2">
+    <text x="40" y="118" class="o">Tej Gokani · full-stack developer · security researcher</text>
+  </g>
+
+  <!-- L3: cat ./mission.txt -->
+  <g class="anim g3">
+    <text x="40" y="148" class="p">tej@github:~$ <tspan class="c">cat ./mission.txt</tspan></text>
+    <rect x="183" y="131" width="192" height="23" fill="#070b0e" class="anim t3"/>
+  </g>
+  <g class="anim k3">
+    <g class="anim t3"><rect x="184" y="133" width="10" height="20" fill="#2affc9" class="blink"/></g>
+  </g>
+
+  <!-- L4-L5 -->
+  <g class="anim g4"><text x="40" y="178" class="o">ship ambitious products daily,</text></g>
+  <g class="anim g5"><text x="40" y="208" class="o">break things ethically — then fix them properly.</text></g>
+
+  <!-- L6: hunt -->
+  <g class="anim g6">
+    <text x="40" y="238" class="p">tej@github:~$ <tspan class="c">sudo hunt --bounty --scope=everything</tspan></text>
+    <rect x="183" y="221" width="396" height="23" fill="#070b0e" class="anim t6"/>
+  </g>
+  <g class="anim k6">
+    <g class="anim t6"><rect x="184" y="223" width="10" height="20" fill="#2affc9" class="blink"/></g>
+  </g>
+
+  <!-- L7-L8 -->
+  <g class="anim g7"><text x="40" y="268" class="o"><tspan class="tag">[scan]</tspan> targets audited: node · nuxt · osv-scanner · libzip</text></g>
+  <g class="anim g8"><text x="40" y="298" class="o"><tspan class="tag">[flag]</tspan> vulnerabilities found → reported → patched</text></g>
+
+  <!-- L9: deploy -->
+  <g class="anim g9">
+    <text x="40" y="328" class="p">tej@github:~$ <tspan class="c">./deploy --to=production --fear=none</tspan></text>
+    <rect x="183" y="311" width="386" height="23" fill="#070b0e" class="anim t9"/>
+  </g>
+  <g class="anim k9">
+    <g class="anim t9"><rect x="184" y="313" width="10" height="20" fill="#2affc9" class="blink"/></g>
+  </g>
+
+  <!-- L10: progress -->
+  <g class="anim g10">
+    <rect x="40" y="345" width="300" height="10" rx="5" fill="#10201c"/>
+    <rect x="40" y="345" width="300" height="10" rx="5" fill="url(#barfill)" class="anim fill10"/>
+    <text x="356" y="355" class="dim">building → bundling → edge</text>
+  </g>
+
+  <!-- L11 -->
+  <g class="anim g11"><text x="40" y="388" class="ok">✔ deployed · 0 downtime · latency 42ms</text></g>
+
+  <!-- L12: idle prompt -->
+  <g class="anim g12">
+    <text x="40" y="420" class="p">tej@github:~$</text>
+    <rect x="190" y="405" width="10" height="20" fill="#2affc9" class="blink"/>
+  </g>
+</svg>

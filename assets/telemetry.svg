@@ -1,0 +1,91 @@
+<svg width="900" height="270" viewBox="0 0 900 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sweep" x1="0" y1="0" x2="82" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2affc9" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2affc9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gaugefill" x1="54" y1="0" x2="222" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f8f74"/>
+      <stop offset="1" stop-color="#2affc9"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; }
+      .ttl { font-size: 12px; fill: #59d9c0; letter-spacing: 2px; }
+      .dim { font-size: 11px; fill: #2b6b5e; letter-spacing: 1px; }
+      .big { font-size: 22px; fill: #eafffa; font-weight: 700; }
+      .panel { fill: #070b0e; stroke: #123832; stroke-width: 2; }
+      .grid { stroke: #10302a; stroke-width: 1; }
+      .blip { fill: #2affc9; animation: blip 4s ease-out infinite; }
+      @keyframes blip { 0%,12% {opacity:0} 16% {opacity:1} 55% {opacity:0.55} 100% {opacity:0} }
+      .ekg { stroke: #2affc9; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round;
+             stroke-dasharray: 100 100; animation: draw 3.6s linear infinite; }
+      @keyframes draw { 0% { stroke-dashoffset: 100; } 55% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -100; } }
+      .gfill { animation: gfill 8s ease-in-out infinite; }
+      @keyframes gfill { 0%,6% { stroke-dashoffset: 100; } 34% { stroke-dashoffset: 9; } 44% { stroke-dashoffset: 14; } 54%,88% { stroke-dashoffset: 10; } 100% { stroke-dashoffset: 100; } }
+      .blink { animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="270" fill="#04070a"/>
+  <rect x="1" y="1" width="898" height="268" rx="14" stroke="#123832" stroke-width="2"/>
+  <text x="30" y="34" class="ttl">LIVE TELEMETRY</text>
+  <circle cx="866" cy="29" r="4" fill="#2affc9" class="blink"/>
+
+  <!-- PANEL 1 : RADAR -->
+  <g transform="translate(22,52)">
+    <rect width="272" height="196" rx="10" class="panel"/>
+    <text x="16" y="26" class="ttl">RADAR // BUG SCAN</text>
+    <g transform="translate(136,112)">
+      <circle r="24" class="grid" fill="none"/>
+      <circle r="48" class="grid" fill="none"/>
+      <circle r="72" class="grid" fill="none"/>
+      <line x1="-72" y1="0" x2="72" y2="0" class="grid"/>
+      <line x1="0" y1="-72" x2="0" y2="72" class="grid"/>
+      <path d="M0 0 L72 0 A72 72 0 0 1 62.4 36 Z" fill="url(#sweep)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="34" cy="-26" r="4" class="blip"/>
+      <circle cx="-42" cy="18" r="4" class="blip" style="animation-delay:-1.4s"/>
+      <circle cx="14" cy="50" r="4" class="blip" style="animation-delay:-2.7s"/>
+      <circle r="3" fill="#2affc9"/>
+    </g>
+    <text x="16" y="184" class="dim">3 ANOMALIES FLAGGED → REPORTED</text>
+  </g>
+
+  <!-- PANEL 2 : SHIP PULSE -->
+  <g transform="translate(314,52)">
+    <rect width="272" height="196" rx="10" class="panel"/>
+    <text x="16" y="26" class="ttl">SHIP PULSE // DAILY</text>
+    <g class="grid">
+      <line x1="16" y1="70" x2="256" y2="70"/>
+      <line x1="16" y1="110" x2="256" y2="110"/>
+      <line x1="16" y1="150" x2="256" y2="150"/>
+      <line x1="76" y1="50" x2="76" y2="164" opacity="0.5"/>
+      <line x1="136" y1="50" x2="136" y2="164" opacity="0.5"/>
+      <line x1="196" y1="50" x2="196" y2="164" opacity="0.5"/>
+    </g>
+    <path class="ekg" pathLength="100" d="M16 110 L52 110 L62 110 L70 84 L80 140 L90 66 L100 152 L110 110 L146 110 L156 92 L164 128 L172 110 L214 110 L224 96 L232 110 L256 110"/>
+    <text x="16" y="184" class="dim">STATUS: SHIPPING · RHYTHM: RELENTLESS</text>
+  </g>
+
+  <!-- PANEL 3 : CAFFEINE GAUGE -->
+  <g transform="translate(606,52)">
+    <rect width="272" height="196" rx="10" class="panel"/>
+    <text x="16" y="26" class="ttl">CAFFEINE.LVL</text>
+    <g transform="translate(136,142)">
+      <path d="M-82 0 A82 82 0 0 1 82 0" stroke="#10302a" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M-82 0 A82 82 0 0 1 82 0" stroke="url(#gaugefill)" stroke-width="12" stroke-linecap="round" fill="none"
+            pathLength="100" stroke-dasharray="100 100" class="gfill"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="0;162;148;158;152;156;156;0" keyTimes="0;0.34;0.44;0.54;0.64;0.74;0.88;1"
+          dur="8s" repeatCount="indefinite"/>
+        <line x1="0" y1="0" x2="-62" y2="0" stroke="#eafffa" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <circle r="6" fill="#eafffa"/>
+      <text y="34" text-anchor="middle" class="big">≈ 97%</text>
+    </g>
+    <text x="16" y="184" class="dim">THRESHOLD EXCEEDED · OPTIMAL</text>
+  </g>
+</svg>
