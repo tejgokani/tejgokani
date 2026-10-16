@@ -1,0 +1,21 @@
+<svg width="440" height="132" viewBox="0 0 440 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title>TermiBase</title>
+<defs>
+  <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00957a"/><stop offset="1" stop-color="#00957a" stop-opacity="0.1"/></linearGradient>
+  <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00957a" stop-opacity="0"/><stop offset="0.5" stop-color="#00957a" stop-opacity="0.8"/><stop offset="1" stop-color="#00957a" stop-opacity="0"/></linearGradient>
+  <clipPath id="clip"><rect width="440" height="132" rx="12"/></clipPath>
+  <style>.m{font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace} .s{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+  .g{animation:g 6s ease-in-out infinite;animation-delay:2.8s} @keyframes g{0%{transform:translateX(-180px)}60%,100%{transform:translateX(460px)}}</style>
+</defs>
+<rect x="0.5" y="0.5" width="439" height="131" rx="11.5" fill="#ffffff" stroke="#cfe3de"/>
+<g clip-path="url(#clip)"><rect class="g" y="0" width="180" height="2" fill="url(#glint)"/></g>
+<rect x="0" y="22" width="3" height="42" rx="1.5" fill="url(#bar)"/>
+<text x="24" y="40" class="m" font-size="18" font-weight="700" fill="#052e27">TermiBase</text>
+<g transform="translate(349.6,26)">
+  <circle cx="6" cy="9" r="4.5" fill="#3572a5"/>
+  <text x="18" y="13" class="m" font-size="12" fill="#4d6e67">Python</text>
+</g>
+<text x="24" y="70" class="s" font-size="13.5" fill="#3f5f58">Terminal SQL playground that shows how queries</text>
+<text x="24" y="90" class="s" font-size="13.5" fill="#3f5f58">are parsed, planned and executed.</text>
+<text x="24" y="116" class="m" font-size="11.5" fill="#00957a" opacity="0.9">★ 6</text>
+</svg>
