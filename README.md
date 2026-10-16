@@ -67,6 +67,23 @@ Generated from the GitHub API every day, with no third-party widgets.
   <img src="https://skillicons.dev/icons?i=rust,go,c,py,ts,kotlin,react,nextjs,nodejs,postgres,docker,linux,cloudflare&perline=13&theme=light" alt="Rust, Go, C, Python, TypeScript, Kotlin, React, Next.js, Node.js, PostgreSQL, Docker, Linux, Cloudflare" />
 </picture>
 
+## Challenge
+
+If you read security profiles for fun, here's a two-stage one. Solve it and say hi.
+
+<details>
+<summary><code>~/.hidden</code> &nbsp;(2 stages, no tools needed)</summary>
+
+<br/>
+
+```
+c3RhZ2UgMjogdGhlIGtleSBoaWRlcyBpbiB0aGUgcmF3IHJlYWRtZS4geG9yIGl0LCByZXBlYXRpbmcgdGhlIGtleS4KMTMwZDA1MDgwMjA1MGMxOTNhMTQwNzFhMDExNzA5MzYwNzE2MzgwOTMwMDAxZjA1MDUwMjE4NDc1MjU1NTMwZDAzMWM0ZTAzMDgxZDAxMTc1NDA1MWQ0MDQ1MTQwOTE2NTMxYzA1NTM0ZTExMDIwMjAyMTQxYjA3MDgwMDBjMjcwZjAyMTIxZDAwNDcwZDBhMGE=
+```
+
+</details>
+
+<!-- you are reading the raw file, which is the point. key: ghostline -->
+
 ---
 
 <div align="center">
